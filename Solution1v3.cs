@@ -46,6 +46,13 @@ namespace Day4
 
                 string testString = ByteArrayToStringFirst3(tmpHash).Substring(0, 5);
 
+                // I'm trying to avoid using an if statement here
+                // the idea is I end up with
+                // testing = 0 for a miss
+                // testing = 1 for a hit
+                // If I get a hit it increments the loop counter such that it exceeds the upper bound
+                // If I get a miss it loops again
+
                 testString += "1";
 
                 int.TryParse(testString, out int testing);

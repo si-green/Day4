@@ -63,6 +63,11 @@ namespace Day4
 
         private bool ByteArrayToStringFirst3v2(byte[] arrInput)
         {
+            // here I'm trying to reduce the number of loops
+            // by failing as soon as I don't get a zero for
+            // the first two sets of 2 characters. I'm only interested in the
+            // first character of the third 2 characters.
+
             int i;
             string output;
             bool isZero = true;
